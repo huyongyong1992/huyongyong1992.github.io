@@ -1,18 +1,412 @@
 <!DOCTYPE html>
-<html>
+<!-- saved from url=(0041)https://v3.bootcss.com/examples/carousel/ -->
+<html lang="zh-CN">
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Young的个人主页</title>
-
-
-<link href="/static/css/app.css" rel="stylesheet"></head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="旅行者1号的空间">
+    <meta name="author" content="Young">
+    <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
+    <link rel="stylesheet" href='./static/index.css'>
+    <title>旅行者1号的空间</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
+    <link rel="stylesheet" href='./static/index.css'>
+    <!-- Custom styles for this template -->
+    <link href="./static/carousel.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
 
 <body>
-    <div id="app">
-        <router-view></router-view>
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">我的个人空间</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">关于我</a></li>
+                            <li><a href="#career">工作经历</a></li>
+                            <li><a href="#productList">项目列表</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">我的博客</a></li>       
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">journey</li>
+                                    <li><a href="#">旅行</a></li>
+                                    <li><a href="#">大学</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
     </div>
-<script type="text/javascript" src="/static/js/manifest.js"></script><script type="text/javascript" src="/static/js/vendor.js"></script><script type="text/javascript" src="/static/js/app.js"></script></body>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="first-slide" src="./images/1.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>About Life</h1>
+                        <p>Life is a journey, not the destination, but the scenery along the should be and the mood at the view.</p>
+                        <p>let life be beautiful like summer flowers and death like autumn leaves</p>
+                        <p>人生就是一场旅行，不在乎目的地，在乎的应该是沿途的风景以及看风景的心情。</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">佛系人生</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="second-slide" src="./images/2.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>About Happiness</h1>
+                        <p>One needs 3 things to be <code>truly happy</code> living in the world: some thing to do, some one to love, some thing to hope for.</p>
+                        <p>要得到真正的快乐，我们只需拥有三样东西：有想做的事，有值得爱的人，有美丽的梦。</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">快乐密码</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="second-slide" src="./images/3.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>About Love</h1>
+                        <p>Some of us get dipped in flat, some in satin, some in gloss... But every once in a while you find someone who's iridescent, and when you do, nothing will ever compare.</p>
+                        <p>有人住高楼，有人在深沟，有人光万丈，有人一身锈，世人万千种，浮云莫去求，斯人若彩虹，遇上方知有</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">佛系人生</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ">
+                <img class="third-slide" src="./images/4.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>About Free.</h1>
+                        <p>Our integrity sells for so little, but it is all we really have. It is the very last inch of us. But within that inch... We are free. </p>
+                        <p>我们的尊严不值什么钱，但它是我们唯一真正拥有的东西。它是我们最后的一寸领地。但在那一寸领地里...我们是自由的</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">浪迹天涯</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="img-circle" src="./images/wechat_logo.jpg" width="140" height="140">
+                <h3>微信公众号</h3>
+                <p>在自媒体时代，微信公众号要真正实现高效营销，做好“服务”是第一位的。微信传播靠的是内容取胜，微信公众号是一个相对闭合的空间，要想充分利用营销不是瞬时的，而是持续性的。</p>
+                <p><a class="btn btn-default" href="https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1445241432" role="button" target="_blank">View details »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="img-circle" src="./images/crm.jpg" width="140" height="140">
+                <h3>在线CRM系统</h3>
+                <p>将业务流程与专业技术进行有效的整合，最终为企业涉及到客户或消费者的各个领域提供了完美的集成，使得企业可以更低成本、更高效率地满足客户的需求，并与客户建立起基于学习型关系基础上的一对一营销模式，发掘并牢牢地把握住能给企业带来最大价值的客户群。</p>
+                <p><a class="btn btn-default" href="#" role="button" target="_blank">View details »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="img-circle" src="./images/wechat_mp.jpg" width="140" height="140">
+                <h3>小程序</h3>
+                <p>
+                    范围广，可以跨平台访问;小而快，快速的访问带来更好的体验;亲场景亲服务，线下是生产服务的地方。
+                </p>
+                <p><a class="btn btn-default" href="https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/new.html" role="button" target="_blank">View details »</a></p>
+            </div>
+        </div>
+
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider" id="about">
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h1>技能树</h1>
+                <p class="lead">1.熟悉Ajax、JavaScript、DOM等前端技术，掌握面向对象编程思想。</p>
+                <p class="lead">2.熟练掌握Jquery、Zepto、React,vue等框架。</p>
+                <p class="lead">3.熟悉less/sass,webpack,npm,yarn等工具的使用。</p>
+                <p class="lead">4.熟悉HTML5特性及规范，能够熟练运用HTML5特性构建移动端的WebApp</p>
+                <p class="lead">5.熟悉使用react/vue开发,掌握组件化开发。</p>
+                <p class="lead">6.了解nodejs,能简单搭配使用express mongodb。</p>
+                <p class="lead">7.熟悉使用微信公众号开发。</p>
+                <p class="lead">8.了解微信小程序的开发。</p>
+                <p class="lead">9.了解python，并能实现简单开发。</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7 about">
+                <!-- <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="" data-holder-rendered="true"> -->
+                <h1>ABOUT ME </h1>
+                <div class="techList">
+                    <span class="label label-success">javascript</span>
+                    <span class="label label-success">html</span>
+                    <span class="label label-success">css</span>
+                    <span class="label label-success">vue</span>
+                    <span class="label label-success">react</span>
+                    <span class="label label-success">canvas</span>
+                    <span class="label label-primary">nodejs</span>
+                    <span class="label label-primary">python</span>
+                    <span class="label label-primary">小程序</span>
+                    <span class="label label-default">RN</span>
+                    <span class="label label-default">Weex</span>
+                </div>
+                <img src="./images/avatar.jpg" class="avatar">
+                <h2>
+                    WEB 前端开发工程师
+                </h2>
+                <p>2010.09-2014.07 华东交通大学 光信息科学与技术</p>
+
+                <p>
+                    <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
+                    <span>中国-浙江-杭州</span>
+                    <span class="age"></span>
+                </p>
+                <p><a href="https://github.com/huyongyong1992">我的Github</a></p>
+                <p class="about_desc">If I may not write beautiful books, I may at least read beautiful books , and what joy can be greater?</p>
+                <p>邮箱：huyongyoong1992@gmail.com</p>
+
+            </div>
+        </div>
+            <hr class="featurette-divider">
+<!-- career  -->
+            <h1 id="career">职业生涯</h1>
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="">维信金融科技集团<span class="text-muted">O2O项目组</span></h2>
+                    <h3>职位：前端开发工程师</h3>
+                    <p>公司简介：拥有十二年中国内地消费金融服务经验，是科技驱动的智能消费金融服务提供商。 目前集团在中国拥有包括（互联网）小额贷款、融资担保、融资租赁、金融服务等在内的多家子（分）公司及业务分部。 维信集团在上海设立跨国公司地区总部，并在上海、成都、苏州等地设立了风险控制中心、大数据中心、信息技术中心、客户服务中心及财务中心等，通过自主研发的蜂鸟大数据平台和智能信贷机器人，为全国用户提供触手可及的智能金融服务。</p>
+                    <p>工作内容：负责公司所有前端项目的开发维护工作，主要包括两个微信公众号，后台管理系统的前端开发，app内web内容开发与维护。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" alt="300x300" src="./images/hz.jpg" data-holder-rendered="true">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block"  alt="300x300" src="./images/hz.jpg" data-holder-rendered="true">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="">杭州微蚁科技<span class="text-muted"></span></h2>
+                    <h3>职位：前端开发工程师</h3>
+                    <p>公司简介：浙江中国小商品城集团旗下控股公司，服务于线下10w+实体商户及日均30万市场客流，拥有集团总部完善的大数据和优质的资源支持，战略清晰，业务方向精准，目标明确，核心团队拥有丰富的互联网产品和运营经验。</p>
+                    <p>工作内容：负责义采宝微信端的开发工作，以及公司CRM系统的开发工作。</p>
+                </div>
+               
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="">富泰华工业有限公司<span class="text-muted">IDPBG事业群</span></h2>
+                    <h3>职位：光学工程师/前端开发工程师</h3>
+                    <p>公司简介：代工领域规模最大、成长最快、评价最高的国际集团，集团旗下公司不仅于台湾、香港、伦敦等证券交易所挂牌交易，更囊括当前台湾最大的企业、捷克前三大出口商、大中华地区最大出口商、富比士及财富全球五百大企业，及全球3C代工服务领域龙头.</p>
+                    <p>工作内容：事业群旗下网站维护。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block"  alt="300x300" src="./images/sz.jpg" data-holder-rendered="true">
+                </div>
+            </div> -->
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+        
+            <h1 id="productList">项目列表</h1>
+          <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="thumbnail" style="height: 400px;">
+              <a href="#" title="二维码" target="_blank" >
+                <img class="lazy" src="./images/wechat.jpg" width="300" height="150" style="border:1px solid #ccc;">
+              </a>
+              <div class="caption">
+                <h3>
+                    <a href="#" title="义采宝微信公众号" target="_blank" >义采宝</a>
+                </h3>
+                <p>技术栈：React</p>
+                <p>基于React,fetch,reflux,react-router,ES6等技术构建的多页webapp应用。</p>
+                <p>UI库React-WeUI</p>
+                <p>两人合作开发</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="thumbnail" style="height: 400px;">
+                <a href="#" title="二维码" target="_blank" >
+                <img class="lazy" src="./images/admin.jpg" width="300" height="150" style="border:1px solid #ccc;">
+                </a>
+                <div class="caption">
+                <h3>
+                    <a href="https://www.microants.cn/" title="官网" target="_blank" >微蚁官网</a>
+                </h3>
+                <p>技术栈：jQuery,ES6</p>
+                <p>基于jQuery 构建的移动和PC官网</p>
+                <p>独立开发</p>
+                </div>
+            </div>
+          </div>  
+          <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="thumbnail" style="height: 400px;">
+                <a href="#" title="" target="_blank" >
+                <img class="lazy" src="./images/webapp.jpg"  width="300" height="150" style="border:1px solid #ccc;">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="#" title="义采宝APP端H5" target="_blank" >义采宝APP端H5</a>
+                    </h3>
+                    <p>技术栈：React</p>
+                    <p>基于React,fetch,reflux,react-router,ES6等技术构建的多页webapp应用。</p>
+                    <p>UI库：ant-design mobile</p>
+                    <p>两人合作开发</p>
+                </div>
+            </div>
+          </div>  
+         
+          <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="thumbnail" style="height: 400px;">
+                <a href="#" title="" target="_blank" >
+                <img class="lazy" src="./images/admin.jpg" width="300" height="150" style="border:1px solid #ccc;">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="#" title="" target="_blank" >微蚁CRM系统</a>
+                    </h3>
+                    <p>技术栈：React</p>
+                    <p>基于 React,fetch,reflux,react-router,ES6等技术构建的单页应用。</p>
+                    <p>UI库：ant-design</p>
+                    <p>独立开发</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="thumbnail" style="height: 400px;">
+                <a href="#" title="" target="_blank" >
+                <img class="lazy" src="./images/wechat.jpg" width="300" height="150" style="border:1px solid #ccc;">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="" title="义采宝微信公众号" target="_blank" >贷贷看</a>
+                    </h3>
+                    <p>技术栈：Vue</p>
+                    <p>基于 Vue,Axios,Vuex,vue-router,ES6等技术构建的单页应用。</p>
+                    <p>UI库：Vux</p>
+                    <p>两人合作开发</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="thumbnail" style="height: 400px;">
+                <a href="#" title="" target="_blank">
+                <img class="lazy" src="./images/wechat.jpg"  width="300" height="150" style="border:1px solid #ccc;">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="#" title="义采宝微信公众号">维立贷</a>
+                    </h3>
+                    <p>技术栈：Vue</p>
+                    <p>基于 Vue,Axios,Vuex,vue-router,ES6等技术构建的单页应用。</p>
+                    <p>UI库：Vux</p>
+                    <p>两人合作开发</p>
+                    <p>描述：</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="thumbnail" style="height: 400px;">
+                <a href="#" title="" target="_blank">
+                    <img class="lazy" src="./images/webapp.jpg" width="300" height="150" style="border:1px solid #ccc;">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="" title="义采宝微信公众号" target="_blank" >维信服务中心</a>
+                    </h3>
+                    <p>技术栈：Vue</p>
+                    <p>基于 Vue,Axios,Vue-router,ES6等技术构建的多页应用。</p>
+                    <p>UI库：Vux</p>
+                    <p>独立开发</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="thumbnail" style="height: 400px;">
+                <a href="#" title="" target="_blank" >
+                    <img class="lazy" src="./images/admin.jpg" width="300" height="150" style="border:1px solid #ccc;">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="" title="CRM" target="_blank" >贷贷看CRM系统</a>
+                    </h3>
+                    <p>技术栈：Vue</p>
+                    <p>基于 Vue,Axios,Vuex,vue-router,ES6等技术构建的单页应用。</p>
+                    <p>UI库：Element UI</p>
+                    <p>独立开发</p>
+                </div>
+            </div>
+          </div>  
+          
+
+            <!-- FOOTER -->
+            <footer>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>© 2016 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Young</a></p>
+
+            </footer>
+        </div>
+        <!-- /.container -->
+
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./static/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+        </script>
+        <script src="./static/bootstrap.min.js"></script>
+        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+        <script src="./static/holder.min.js"></script>
+        <script>
+            var year = new Date().getFullYear() - 1992
+                // console.log(year)
+            $('.age').text(year + '岁');
+        </script>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg></body>
 
 </html>
